@@ -1,8 +1,8 @@
 {
-  "name": "sockjs-client",
-  "description": "SockJS-client is a browser JavaScript library that provides a WebSocket-like object.",
-  "version": "1.5.0",
-  "author": "Bryce Kahle",
+  "name": "sockjs-client-we-chat",
+  "description": "a branch of SockJS-client supporting wechat miniprogram.",
+  "version": "1.0.0",
+  "author": "siaikin",
   "jsdelivr": "dist/sockjs.min.js",
   "browser": {
     "./lib/transport/driver/websocket.js": "./lib/transport/browser/websocket.js",
@@ -12,24 +12,13 @@
     "events": "./lib/event/emitter.js"
   },
   "bugs": {
-    "url": "https://github.com/sockjs/sockjs-client/issues"
+    "url": "https://github.com/siaikin/sockjs-client-we-chat/issues"
   },
-  "contributors": [
-    {
-      "name": "Bryce Kahle",
-      "email": "bkahle@gmail.com"
-    },
-    {
-      "name": "Marek Majkowski",
-      "email": "deadbeef@popcount.org"
-    }
-  ],
   "dependencies": {
     "debug": "^3.2.6",
     "eventsource": "^1.0.7",
     "faye-websocket": "^0.11.3",
     "inherits": "^2.0.4",
-    "json3": "^3.3.3",
     "url-parse": "^1.4.7"
   },
   "devDependencies": {
@@ -65,13 +54,14 @@
   "main": "./lib/entry.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sockjs/sockjs-client.git"
+    "url": "https://github.com/siaikin/sockjs-client-we-chat.git"
   },
   "scripts": {
     "test": "mocha tests/node.js",
     "test:bundle": "gulp testbundle",
     "test:browser_local": "npm run test:bundle && npx karma start --browsers Chrome",
     "test:browser_remote": "npm run test:bundle && npx karma start",
+    "test:we-chat": "gulp testbundle-we-chat && node tests/we-chat.js",
     "gulp": "gulp",
     "lint": "eslint .",
     "version": "gulp release && git add -A dist lib/version.js Changelog.md",
