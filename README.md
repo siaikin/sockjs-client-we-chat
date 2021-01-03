@@ -19,6 +19,12 @@ websocket-we-chat  | [微信小程序][^1]
 
 # 用法
 
+## 安装
+
+```shell script
+npm install sockjs-client-we-chat
+```
+
 默认情况下与SockJS-client相同, 如需使用指定的传输方式, 参考下例:
 
 ```javascript
