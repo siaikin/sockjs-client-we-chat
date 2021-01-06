@@ -1,7 +1,7 @@
 {
   "name": "sockjs-client-we-chat",
   "description": "a branch of SockJS-client supporting wechat miniprogram.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "siaikin",
   "jsdelivr": "dist/sockjs.min.js",
   "browser": {
