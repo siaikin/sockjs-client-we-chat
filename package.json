@@ -65,7 +65,7 @@
     "gulp": "gulp",
     "lint": "eslint .",
     "version": "gulp release && git add -A dist lib/version.js Changelog.md",
-    "postversion": "npm publish",
+    "postversion": "npm publish --registry https://registry.npmjs.org",
     "postpublish": "git push origin --all && git push origin --tags"
   }
 }
